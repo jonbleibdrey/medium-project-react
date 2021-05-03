@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
   margin: 0;
-  font-family: 'Bungee Shade';
+  font-family: "Bungee Shade";
   color: #333;
 }
 .navbar {
@@ -35,8 +34,18 @@
   padding: 20px;
 }
 
-.footer{
+.footer {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+button{
+  padding: 1%;
+  margin: 2%;
+  font-family: monospace;
+  background-color: yellow;
+  text-decoration: none;
+  box-shadow: -5px 5px 5px 1px lightgrey;
+
 }

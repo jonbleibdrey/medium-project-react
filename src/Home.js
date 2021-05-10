@@ -1,31 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Home = () => {
-  
+  const [blogs, setBlogs] = useState([
+    {
+      title: "my new webiste",
+      body:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
+      author: "baby jesus",
+      id: 1,
+    },
+    {
+      title: "We had a party",
+      body:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
+      author: "micheal jordan",
+      id: 2,
+    },
+    {
+      title: "web dev game",
+      body:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
+      author: "madona",
+      id: 3,
+    },
+  ]);
 
-  const handleClick = (event) => {
-    console.log("we made it to the click event", event);
-  };
-  const handleClickAgain = (name) => {
-    console.log("welcome to Neverland " + name);
-  };
-  
- 
-
-  return (
-    <div className="home">
-      <h2>Home page</h2>
-      <button onClick={handleClick}> click me </button>
-      <button
-        onClick={(event) => {
-          handleClickAgain(event, "taco hernadez");
-        }}
-      >
-        {" "}
-        click me 2
-      </button>
-    </div>
-  );
+  return <div className="home"></div>;
 };
 
 export default Home;

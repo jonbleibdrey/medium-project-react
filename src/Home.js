@@ -23,15 +23,18 @@ const Home = () => {
     },
   ]);
 
-  console.log(setBlogs);
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All blogs" />
-      <BlogList
+      <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete} />
+      {/* <BlogList
         blogs={blogs.filter((blog) => blog.author === "micheal jordan")}
         title="Micheal's Blog Post"
-      />
+      /> */}
     </div>
   );
 };

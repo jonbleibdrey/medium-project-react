@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "My first blog with json",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
+      "author": "gorilla",
+      "id": 1
+    },
+    {
+      "title": "Open up party!",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
+      "author": "ninja",
+      "id": 2
+    }
+  ]
+}

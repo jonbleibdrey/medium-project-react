@@ -2,26 +2,7 @@ import React, { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
-    {
-      title: "my new website",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
-      author: "baby jesus",
-      id: 1,
-    },
-    {
-      title: "We had a party",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
-      author: "micheal jordan",
-      id: 2,
-    },
-    {
-      title: "web dev game",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor ullam iste sint cupiditate suscipit! Asperiores sed nam recusandae quo dicta eius natus corporis tempora sapiente, vero aspernatur quidem error?",
-      author: "micheal jordan",
-      id: 3,
-    },
-  ]);
+  const [blogs, setBlogs] = useState(null);
 
   const [name, setName] = useState("jonathan bleibdrey");
 
@@ -32,8 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     console.log("use effect ran");
-    console.log(name);
-  }, [name]);
+  }, []);
 
   return (
     <div className="home">

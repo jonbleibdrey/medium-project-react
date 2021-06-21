@@ -1,30 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null)
+ const {data: blogs, isLoading, error} = useFetch("http://localhost:8000/blogs")
+  
+  // npx json-server --watch data/data.json --port 8000
 
-  useEffect(() => {
-    fetch("http://localhost:8000/blogs")
-      .then((res) => {
-        if(!res.ok){
-          throw Error("Error Message: could not fetch the data")
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setBlogs(data);
-        setIsLoading(false)
-        setError(null)
-      })
-      .catch(err => {
-       setError(err.message)
-       setIsLoading(false)
-      })
-  }, []);
- 
   return (
     <div className="home">
       { error && <div>{error} </div>}

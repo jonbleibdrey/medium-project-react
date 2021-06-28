@@ -4,7 +4,7 @@ const Create = () => {
     return (
         <div className="create">
             <h2>
-                add a new blog
+                Add a new blog
             </h2>
            
 

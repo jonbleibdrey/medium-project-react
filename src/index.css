@@ -70,3 +70,7 @@ button {
   font-family: "Fredoka One";
   font-size: 0.8rem;
 }
+
+.blog-preview a{
+  text-decoration: none;
+}

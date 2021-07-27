@@ -74,3 +74,15 @@ button {
 .blog-preview a{
   text-decoration: none;
 }
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #8fc47a;
+  margin-bottom: 10px;
+  font-family: "Bungee Shade";
+}
+.blog-details div {
+  margin: 20px 0;
+}
+
+

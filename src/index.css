@@ -110,8 +110,8 @@ button {
   display: block;
 }
 .create button {
-  background: #f1356d;
-  color: #fff;
+  background: yellow;
+  color: black;
   border: 0;
   padding: 8px;
   border-radius: 8px;

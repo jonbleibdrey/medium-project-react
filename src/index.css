@@ -74,6 +74,7 @@ button {
 .blog-preview a{
   text-decoration: none;
 }
+/* blog detials */
 
 .blog-details h2 {
   font-size: 20px;
@@ -83,6 +84,15 @@ button {
 }
 .blog-details div {
   margin: 20px 0;
+}
+
+.blog-details button{
+  background: #f1356d;
+  color: #333;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* create page */
